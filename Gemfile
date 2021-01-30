@@ -7,9 +7,9 @@ end
 
 gem "rubocop", "0.79.0", require: false
 gem "rubocop-rails"
-
+gem "bootsnap"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.5'
+gem 'rails', '~> 5.2.4'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
