@@ -1,6 +1,9 @@
 Instagram Challenge
 ===================
 
+* Had a bit of 'one of those days' working on this - lost a LOT of time to some obscure bugs (including: my test and development databases not being mirrored, my sessions persisting across server reboots etc and locking me out of the site, test databases not cleaning between tests, bcrypt working on the dev db but not the test db, and a few other real timesinks). Was a shame as felt I was really getting to grips with the wider concepts of rails routing and basic app building.
+* As such, no styling done, and didn't get round to implementing likes. The structure is there though!
+
 ## User Stories
 
 As a user
