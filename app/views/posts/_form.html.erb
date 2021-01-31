@@ -17,13 +17,12 @@
   </div>
 
   <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div class="field">
     <%= form.label "Picture" %>
     <%= form.file_field :image %><br>
+  </div>
+
+  <div>
+    <%= form.hidden_field :user_id, value: current_user.id %>
   </div>
 
   <div class="actions">

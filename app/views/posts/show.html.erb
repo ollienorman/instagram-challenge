@@ -8,9 +8,19 @@
 </p>
 
 <p>
-  <strong>Email:</strong>
-  <%= @post.email %>
+  <strong>User:</strong>
+  <%= @post.user.email %>
 </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
+<div>
+<strong>Comments:</strong><br>
+  <% @post.comments.each do |comment| %>
+    <%= comment.user.email %>: <%= comment.text %> <br>
+  <%end%>
+</div>
+<br>
+<div>
+  <%= link_to "Add Comment", new_comment_path(post_url: @post.id) %>
+</div>
+<br>
 <%= link_to 'Back', posts_path %>
