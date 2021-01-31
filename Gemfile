@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'bcrypt-ruby', '~> 3.1.0'
 gem "rubocop", "0.79.0", require: false
 gem "rubocop-rails"
 gem "bootsnap"
@@ -39,8 +40,9 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
+  gem 'capybara', '~> 3.35.3'
   gem 'selenium-webdriver'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
